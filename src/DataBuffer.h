@@ -2,7 +2,6 @@
 #define HW2_DATA_BUFFER_H
 #include <iostream>
 
-//HyWall2 rules
 namespace hw2
 {
     template <typename arType> struct DataBuffer
