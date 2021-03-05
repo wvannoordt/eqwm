@@ -11,6 +11,16 @@ namespace hw2
         array.SetSize(dim*partition->numSolvePoints);
     }
     
+    double* Variable::Data(void)
+    {
+        return array.data;
+    }
+    
+    void Variable::Fill(double val)
+    {
+        array.Fill(val);
+    }
+    
     std::string Variable::GetName(void)
     {
         return name;

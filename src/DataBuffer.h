@@ -16,6 +16,10 @@ namespace hw2
             if (data!=NULL) free(data);
             data = (arType*)malloc(totalSize);
         }
+        void Fill(arType val)
+        {
+            for (size_t i = 0; i < elementCount; i++) data[i] = val;
+        }
         ~DataBuffer(void)
         {
             if (data!=NULL) free(data);

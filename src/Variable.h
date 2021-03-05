@@ -11,6 +11,9 @@ namespace hw2
             Variable(std::string name_in, int dim_in, Partition* varPartition);
             ~Variable(void);
             std::string GetName(void);
+            double* Data(void);
+            void Fill(double val);
+            
         private:
             std::string name;
             Partition* partition;
